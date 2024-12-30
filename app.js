@@ -5,7 +5,7 @@
             const toppings = document.getElementById('toppings').value;
             const cheese = document.getElementById('cheese').value;
 
-            const response = await fetch('http://localhost:8080/generate-bill', {
+            const response = await fetch('https://pizza-bill-generator.onrender.com', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
