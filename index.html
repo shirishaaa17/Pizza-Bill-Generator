@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Bill Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Pizza Bill Generator</h1>
+    </header>
+
+    <div class="container">
+        <h2>Create Your Pizza Order</h2>
+
+        <form id="pizzaForm">
+            <label for="size">Pizza Size:</label>
+            <select id="size" name="size" required>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select>
+
+            <label for="toppings">Number of Toppings:</label>
+            <input type="number" id="toppings" name="toppings" min="0" max="10" required>
+
+            <label for="cheese">Extra Cheese:</label>
+            <select id="cheese" name="cheese" required>
+                <option value="yes">Yes</option>
+                <option value="no">No</option>
+            </select>
+
+            <button type="submit">Generate Bill</button>
+        </form>
+
+        <div class="output" id="output">
+            <h3>Bill Summary:</h3>
+            <p id="billDetails">Fill in your order details to see the bill.</p>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
